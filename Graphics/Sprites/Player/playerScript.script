@@ -1,13 +1,13 @@
 -- the acceleration to move right/left
-local move_acceleration = 3000
+local move_acceleration = 1000
 -- acceleration factor to use when air-borne
-local air_acceleration_factor = 0.8
+local air_acceleration_factor = 0.2
 -- max speed right/left
-local max_speed = 300
+local max_speed = 100
 -- gravity pulling the player down in pixel units
-local gravity = -500
+local gravity = -750   
 -- take-off speed when jumping in pixel units
-local jump_takeoff_speed = 250
+local jump_takeoff_speed = 290
 -- time within a double tap must occur to be considered a jump (only used for mouse/touch controls)
 local touch_jump_timeout = 0.2
 
@@ -19,7 +19,7 @@ local input_left = hash("Left")
 local input_right = hash("Right")
 local input_jump = hash("Jump")
 local input_touch = hash("touch")
-local anim_run = hash("idle")
+local anim_run = hash("walk")
 local anim_idle = hash("idle")
 local anim_jump = hash("idle")
 local anim_fall = hash("idle")
